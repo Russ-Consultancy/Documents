@@ -6,7 +6,6 @@ theme:
     code: Red Hat Mono
   logo: assets/russ_new.png
   favicon: assets/russ_new.png
-  theme:
   palette: 
     primary: blue grey
     accent: deep purple
@@ -21,18 +20,13 @@ theme:
     - header.autohide
     - navigation.footer
 markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.arithmatex:
-      generic: true
-  - admonition
-  - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
 plugins:
