@@ -1,0 +1,52 @@
+site_name: AWR Analysis
+theme:
+  name: material
+  font:
+    text: Lato
+    code: Red Hat Mono
+  logo: assets/russ_new.png
+  favicon: assets/russ_new.png
+  theme:
+  palette: 
+    primary: blue grey
+    accent: deep purple
+    scheme: default
+  features:
+    - content.code.copy
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.top
+    - search.share
+    - header.autohide
+    - navigation.footer
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - tags
+  - search
+nav:
+  - Overview: index.md
+  - Output Extraction: Output Extraction.md
+  - AWR Analysis Preparation: Preparation of Analysis.md
+  - PROPOSAL CREATION: Proposal Preparation.md
+extra:
+  social:
+    - icon: simple/google
+      link: https://russconsultancy.com/
+
+
+
